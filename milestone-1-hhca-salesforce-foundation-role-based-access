@@ -1,0 +1,40 @@
+Project type: Hands-on Salesforce Administration & Platform App Builder Project
+Methodology: Sprint-based delivery
+Environment: Salesforce Developer Edition
+1. Business Context
+A housing counseling agency needs a centralized Salesforce application where housing counselors can manage their work while supervisors have appropriate access to oversee operations. Without a clearly structured application and defined access permissions, staff may have difficulty navigating the system, and sensitive information may not be accessible according to their responsibilities.
+2. Business Requirements
+The application needed to:
+•	Provide a dedicated Salesforce app for HHCA's housing counseling operations.
+•	Establish a role hierarchy representing the supervisor and counselor positions.
+•	Create counselor and supervisor user accounts for testing different access levels.
+•	Apply permission sets to grant access based on each user's responsibilities.
+•	Validate that the configured access supports the intended operational needs.
+3. What I Built
+•	Custom Salesforce application: Created the HHCA application with counselor-facing navigation and relevant workspace tabs.
+•	Role hierarchy: Established the HHCA organizational structure, with the HHCA Housing Counseling Supervisor above the HHCA Housing Counselor.
+•	Test users: Created counselor and supervisor users to validate the configuration under different user contexts.
+•	Permission sets: Created and assigned HHCA Counselor Access and HHCA Supervisor Access to support role-specific access requirements.
+•	Access validation: Tested user access to relevant records and functionality to identify configuration gaps.
+4. Scope and Out of Scope
+In scope
+•	Salesforce app creation and navigation.
+•	Role hierarchy configuration.
+•	Counselor and supervisor user setup.
+•	Permission-set assignment and access validation.
+•	Initial testing of role-specific access.
+Out of scope
+•	Lead intake and follow-up automation.
+•	Advanced assignment logic and workflow automation.
+•	Comprehensive reporting and dashboard development.
+•	Production deployment and organization-wide rollout.
+These items are reserved for subsequent milestones or future enhancements.
+5. Testing and Results
+I tested the configuration using the counselor and supervisor user contexts to validate access to the application and relevant functionality.
+The supervisor user successfully accessed Leads, including counselor-owned Leads, accessed Tasks, and edited Counselor Profile records. These checks provided evidence that the configured access supported key supervisory activities.
+The supervisor's Home page still required further refinement to provide useful information. That usability improvement was identified separately rather than treating the entire application experience as complete.
+6. Business Value
+This milestone established the foundation for a role-based housing counseling application. It created the organizational structure, user contexts, and permission framework needed to build subsequent lead management, follow-up automation, and reporting capabilities.
+It also established a repeatable approach to validating Salesforce configuration before introducing more complex business processes.
+7. Project Management Approach
+I organized the work as a defined sprint with explicit requirements, scope boundaries, configuration deliverables, and validation activities. I separated future enhancements from the current deliverable to maintain focus and support incremental development.
